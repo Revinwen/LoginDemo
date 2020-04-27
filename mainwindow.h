@@ -21,6 +21,7 @@ public:
 
     int get_data(){ return m_nIndex;}
 
+    int get_sumdata(){ return m_nIndex += 2;}
 private slots:
     void on_pushButton_clicked();
 
