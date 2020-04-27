@@ -14,11 +14,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+    void set_data(int nData){ m_nIndex = nData;}
 private slots:
     void on_pushButton_clicked();
 
 private:
+    int m_nIndex = 0;
     QTextCodec *codec = QTextCodec::codecForName("GBK");//修改这两行
     Ui::MainWindow *ui;
 };
