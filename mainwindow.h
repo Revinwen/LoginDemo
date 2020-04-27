@@ -14,7 +14,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+    int get_sum(int x,int y){ return x+y;}
 private slots:
     void on_pushButton_clicked();
 
