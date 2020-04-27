@@ -19,6 +19,8 @@ public:
 
     void set_data(int nData){ m_nIndex = nData;}
 
+    int get_data(){ return m_nIndex;}
+
 private slots:
     void on_pushButton_clicked();
 
